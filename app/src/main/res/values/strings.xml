@@ -45,6 +45,17 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Hello!Pheaktra</string>
+    <string name="find">Find Product</string>
     <string name="cambodia">Cambodia</string>
     <string name="find_product">Find Product</string>
+    <string name="allproduct">All Products</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="todo7">TODO</string>
 </resources>

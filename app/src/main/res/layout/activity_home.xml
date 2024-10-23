@@ -23,6 +23,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_bg_icon"
+                android:contentDescription="@string/todo1"
                 android:padding="8dp"
                 android:src="@drawable/person_24px" />
 
@@ -30,13 +31,13 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hello!Pheaktra"
+                    android:text="@string/welcome"
                     android:textColor="@color/text_color"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -44,11 +45,13 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/todo"
                         android:src="@drawable/location_on_24px" />
 
                     <TextView
@@ -64,12 +67,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:gravity="right"
-                >
+                tools:ignore="RtlHardcoded">
                 <ImageView
                     android:layout_width="40dp"
                     android:background="@drawable/rounded_bg_icon"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/todo2"
                     android:padding="8dp"
                     android:src="@drawable/shopping_bag_24px"
                     />
@@ -77,8 +81,9 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/todo3"
                     android:padding="8dp"
                     android:background="@drawable/rounded_bg_icon"
                     android:src="@drawable/notifications_24px" />
@@ -89,14 +94,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             >
 
             <EditText
                 android:layout_width="330dp"
                 android:layout_height="40dp"
+                android:autofillHints="Find Products"
                 android:background="@drawable/rounded_bg_icon"
                 android:hint="@string/find_product"
+                android:inputType="search"
                 android:paddingStart="20dp"
                 android:textColor="@color/text_color"
                 android:textSize="20sp"
@@ -105,9 +112,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo4"
                 android:src="@drawable/filter_list_24px"
                 android:background="@drawable/rounded_bg_icon"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:padding="8dp"
                 />
         </LinearLayout>
@@ -119,8 +127,8 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            tools:ignore="SpeakableTextPresentCheck">
+            android:layout_marginStart="10dp"
+            tools:ignore="SpeakableTextPresentCheck,UselessParent">
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
@@ -129,6 +137,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo5"
                     android:src="@drawable/image_banner"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="10dp"
@@ -137,12 +146,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo6"
                     android:src="@drawable/image_banner"
                     android:layout_marginTop="20dp"
                     />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo7"
                     android:src="@drawable/image_banner"
                     android:layout_margin="20dp"
                     />
@@ -156,10 +167,174 @@
         <TextView
             android:padding="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="All Products"
+            android:layout_height="wrap_content"
+            android:text="@string/allproduct"
             android:textSize="32sp"
             android:textStyle="bold"
             />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_card_shadow"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/image_banner"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="10sp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginStart="5dp"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="8dp"
+                    >
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"
+                        android:text="2$/KG"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"
+                        android:text="add card"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_card_shadow"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/image_banner"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="10sp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginStart="5dp"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="8dp"
+                    >
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"
+                        android:text="2$/KG"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"
+                        android:text="add card"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_card_shadow"
+                android:elevation="10dp"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/image_banner"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="10sp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginStart="5dp"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="8dp"
+                    >
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"
+                        android:text="2$/KG"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"
+                        android:text="add card"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
