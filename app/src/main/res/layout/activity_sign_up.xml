@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="2dp">
 
     <ImageView
         android:id="@+id/image_3"
-        android:layout_width="395dp"
+        android:layout_width="0dp"
         android:layout_height="411dp"
         android:layout_marginTop="-25dp"
         android:scaleType="centerCrop"
@@ -30,12 +30,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/image_3"
-        app:layout_constraintVertical_bias="0.537" />
+        app:layout_constraintVertical_bias="0.413" />
 
     <LinearLayout
         android:id="@+id/signup_form"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="469dp"
         android:layout_marginTop="-120dp"
         android:orientation="vertical"
         android:padding="30dp"
@@ -43,6 +43,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="Sign Up"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/input_name"
@@ -52,7 +60,7 @@
             android:inputType="textPersonName"
             android:backgroundTint="#03B92B"
             android:textSize="18sp"
-            android:padding="20dp" />
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/input_email_phone"
@@ -62,7 +70,7 @@
             android:inputType="textEmailAddress"
             android:backgroundTint="#03B92B"
             android:textSize="18sp"
-            android:padding="20dp" />
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/input_password"
@@ -72,7 +80,7 @@
             android:inputType="textPassword"
             android:backgroundTint="#03B92B"
             android:textSize="18sp"
-            android:padding="20dp" />
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/input_confirm_password"
@@ -82,7 +90,7 @@
             android:inputType="textPassword"
             android:backgroundTint="#03B92B"
             android:textSize="18sp"
-            android:padding="20dp" />
+            android:padding="15dp" />
 
         <CheckBox
             android:id="@+id/checkbox_policy"
@@ -95,11 +103,21 @@
         <Button
             android:id="@+id/button_signup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:backgroundTint="#03B92B"
+            android:padding="10dp"
             android:text="Sign Up"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Already have an account?Login here"
+            android:textSize="14sp"
+            android:textColor="#03B92B"
+            android:textAlignment="center"
+            android:padding="5dp">
+        </TextView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
