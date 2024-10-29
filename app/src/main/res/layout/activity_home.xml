@@ -18,7 +18,7 @@
             android:layout_margin="20dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -68,7 +68,7 @@
                 android:layout_height="60dp"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded">
-                <ImageView
+                <ImageButton
                     android:layout_width="40dp"
                     android:background="@drawable/rounded_bg_icon"
                     android:layout_height="40dp"
@@ -78,7 +78,7 @@
                     android:src="@drawable/shopping_bag_24px"
                     />
 
-                <ImageView
+                <ImageButton
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
@@ -106,7 +106,7 @@
                 android:paddingStart="20dp"
                 android:textColor="@color/text_color"
                 tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
-            <ImageView
+            <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"

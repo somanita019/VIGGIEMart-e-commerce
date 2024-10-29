@@ -2,9 +2,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.viggiemart.MainActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+    <item android:id="@+id/history"
+        android:icon="@drawable/history_24px"
+        android:title="History"/>
+    <item android:id="@+id/lang"
+        android:icon="@drawable/language_24px"
+        android:title="Languange"/>
+    <item android:id="@+id/setting"
+        android:icon="@drawable/settings_24px"
+        android:title="Setting"/>
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout_24px"
+        android:title="Logout"/>
 </menu>
