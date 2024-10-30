@@ -12,7 +12,7 @@
         <!-- Back Button and Cart Notification -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"/>
 
             <ImageView
                 android:id="@+id/backButton"
@@ -21,36 +21,6 @@
                 android:src="@drawable/arrow_back"
                 android:contentDescription="@string/back_button" />
 
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true">
-
-                <ImageView
-                    android:id="@+id/cartButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_cart"
-                    android:contentDescription="@string/cart_button" />
-
-                <!-- Cart item count -->
-                <TextView
-                    android:id="@+id/cartItemCount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignEnd="@id/cartButton"
-                    android:background="@drawable/circle_background"
-                    android:text="@string/_3"
-                    android:textColor="@android:color/white"
-                    android:textSize="12sp"
-                    android:padding="2dp"
-                    android:gravity="center" />
-
-            </RelativeLayout>
-        </RelativeLayout>
-
         <!-- Product Image -->
         <ImageView
             android:id="@+id/productImage"
@@ -58,64 +28,43 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:src="@drawable/image_tomatoes" />
-
-
-        <!-- Product Price -->
         <TextView
-            android:id="@+id/productPrice"
+            android:id="@+id/productName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10$/kg"
-            android:textSize="20sp"
-            android:layout_gravity="left"
-            android:paddingTop="30dp" />
+            android:text="Tomato"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            />
 
         <!-- Quantity Selector -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="right"
-            android:layout_gravity="right"
-            >
+            android:padding="8dp">
 
-            <!-- Decrease Button -->
-            <Button
-                android:id="@+id/decreaseButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/button_increase"
-                android:text="-"
-                android:textSize="18dp"
-                android:textColor="@android:color/white"
-                android:gravity="center" />
+            <!-- Product Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <!-- Quantity Display -->
-            <TextView
-                android:id="@+id/quantityText"
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:text="1"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:padding="8dp" />
+                <TextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$/Kg"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black" />
 
-            <!-- Increase Button -->
-            <Button
-                android:id="@+id/increaseButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/button_increase"
-                android:text="+"
-                android:textSize="18dp"
-                android:textColor="@android:color/white"
-                android:gravity="center" />
+            </LinearLayout>
+
         </LinearLayout>
-
-
-
 
         <!-- Description -->
         <TextView
@@ -123,6 +72,7 @@
             android:layout_height="wrap_content"
             android:text="Description"
             android:textSize="24dp"
+            android:textColor="@color/black_texts_color"
             />
 
         <TextView
@@ -141,6 +91,7 @@
             android:text="Related products"
             android:textSize="24dp"
             android:paddingTop="16dp"
+            android:textColor="@color/black_texts_color"
             android:layout_gravity="left" />
 
         <LinearLayout

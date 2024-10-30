@@ -3,5 +3,6 @@
     <color name="background_color">#03B92B</color>
     <color name="background_icon">#99FBFBFB</color>
     <color name="text_color">#fff</color>
+    <color name="black_texts_color">#000000</color>
     <color name="button_icon">#E33629</color>
 </resources>
