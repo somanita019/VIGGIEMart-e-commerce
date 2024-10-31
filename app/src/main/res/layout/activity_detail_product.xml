@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back Button and Cart Notification -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back"
+                android:contentDescription="@string/back_button" />
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_tomatoes" />
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomato"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            />
+
+        <!-- Quantity Selector -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Product Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$/Kg"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="24dp"
+            android:textColor="@color/black_texts_color"
+            />
+
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Deserunt nem"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <!-- Related Products -->
+        <TextView
+            android:id="@+id/relatedProductsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Related products"
+            android:textSize="24dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/black_texts_color"
+            android:layout_gravity="left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <!-- Related product 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/onionImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/image_onion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="onion"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$/Kg"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Related product 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/chilliImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/chili" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chilli"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$/Kg"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Related product 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/cauliflowerImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cauliflower" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cauliflower"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$/Kg"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Related product 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/carrotImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/carrot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="carrot"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10$/Kg"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            android:layout_marginTop="80dp" />
+    </LinearLayout>
+</ScrollView>
