@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/top_image"
         android:layout_width="0dp"
-        android:layout_height="470dp"
+        android:layout_height="410dp"
         android:scaleType="centerCrop"
         android:src="@drawable/image_3"
         app:layout_constraintTop_toTopOf="parent"
