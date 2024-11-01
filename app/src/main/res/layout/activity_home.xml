@@ -18,7 +18,7 @@
             android:layout_margin="20dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -68,7 +68,7 @@
                 android:layout_height="60dp"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded">
-                <ImageView
+                <ImageButton
                     android:layout_width="40dp"
                     android:background="@drawable/rounded_bg_icon"
                     android:layout_height="40dp"
@@ -78,7 +78,7 @@
                     android:src="@drawable/shopping_bag_24px"
                     />
 
-                <ImageView
+                <ImageButton
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
@@ -96,19 +96,17 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             >
-
             <EditText
+                android:id="@+id/searchView"
                 android:layout_width="330dp"
                 android:layout_height="40dp"
                 android:autofillHints="Find Products"
                 android:background="@drawable/rounded_bg_icon"
                 android:hint="@string/find_product"
-                android:inputType="search"
                 android:paddingStart="20dp"
                 android:textColor="@color/text_color"
-                android:textSize="20sp"
                 tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
-            <ImageView
+            <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
